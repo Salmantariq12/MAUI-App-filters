@@ -1,0 +1,24 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppFilter.MainPage"
+             BackgroundColor="White">
+
+    <VerticalStackLayout
+        VerticalOptions="Center"
+        HorizontalOptions="Center">
+
+        <Label
+            Text="Web Filter Running"
+            SemanticProperties.HeadingLevel="Level1"
+            FontSize="32"
+            HorizontalOptions="Center" />
+
+        <Label
+            Text="Status: Active"
+            SemanticProperties.Description="Status of the web filter"
+            FontSize="16"
+            HorizontalOptions="Center" />
+
+    </VerticalStackLayout>
+
+</ContentPage>

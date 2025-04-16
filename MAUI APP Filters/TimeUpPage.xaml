@@ -1,0 +1,49 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppFilter.TimeUpPage"
+             BackgroundColor="#2A006B"
+             NavigationPage.HasNavigationBar="False">
+
+	<Grid>
+		<VerticalStackLayout
+            Padding="40"
+            Spacing="30"
+            VerticalOptions="Center"
+            HorizontalOptions="Center">
+
+			<Label Text="Time's up!"
+                   FontSize="36"
+                   TextColor="White"
+                   HorizontalOptions="Center" />
+
+			<Label Text="You've used all of your allowed PC time for today."
+                   FontSize="18"
+                   TextColor="White"
+                   HorizontalTextAlignment="Center" />
+
+			<Label Text="Come back later or ask a parent for more time."
+                   FontSize="16"
+                   TextColor="White"
+                   HorizontalTextAlignment="Center" />
+
+			<Label x:Name="UsageInfoLabel"
+                   FontSize="14"
+                   TextColor="White"
+                   HorizontalTextAlignment="Center" />
+
+			<HorizontalStackLayout Spacing="20" HorizontalOptions="Center">
+				<Button Text="Get more time"
+                        Clicked="OnAskForMoreTimeClicked"
+                        BackgroundColor="White"
+                        TextColor="#2A006B"
+                        Padding="10,5" />
+
+				<Button Text="Switch users or turn off PC"
+                        Clicked="OnOkClicked"
+                        BackgroundColor="White"
+                        TextColor="#2A006B"
+                        Padding="10,5" />
+			</HorizontalStackLayout>
+		</VerticalStackLayout>
+	</Grid>
+</ContentPage>
